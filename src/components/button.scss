@@ -1,0 +1,169 @@
+button {
+  font-size: 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  width: min-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  img {
+    width: 24px;
+    height: 24px;
+  }
+  &.btn-size-sm {
+    padding: 6px 12px;
+  }
+  &.btn-size-md {
+    padding: 8px 16px;
+  }
+  &.btn-size-xl {
+    padding: 12px 22px;
+  }
+  &.shadow {
+    box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+  }
+  &.no-shadow {
+    box-shadow: none;
+  }
+  &.btn-variants-default {
+    &.default {
+      background-color: #e0e0e0;
+      color: #3f3f3f;
+      &:hover:not(:disabled) {
+        background-color: #aeaeae;
+      }
+      &:disabled {
+        background-color: rgba(#e0e0e0, 0.6);
+        color: rgba(#3f3f3f, 0.4);
+      }
+    }
+    &.primary {
+      background-color: #2962ff;
+      color: #fff;
+      &:hover:not(:disabled) {
+        background-color: #0039cb;
+      }
+      &:disabled {
+        background-color: rgba(#2962ff, 0.6);
+        color: rgba(#fff, 0.4);
+      }
+    }
+    &.secondary {
+      background-color: #455a64;
+      color: #fff;
+      &:hover:not(:disabled) {
+        background-color: #1c313a;
+      }
+      &:disabled {
+        background-color: rgba(#455a64, 0.6);
+        color: rgba(#fff, 0.4);
+      }
+    }
+    &.danger {
+      background-color: #d32f2f;
+      color: #fff;
+      &:hover:not(:disabled) {
+        background-color: #9a0007;
+      }
+      &:disabled {
+        background-color: rgba(#d32f2f, 0.6);
+        color: rgba(#fff, 0.4);
+      }
+    }
+  }
+  &.btn-variants-outline {
+    &.default {
+      background-color: transparent;
+      border: 1px solid #3f3f3f;
+      color: #3f3f3f;
+      &:hover:not(:disabled) {
+        background-color: rgba(#3f3f3f, 0.1);
+      }
+      &:disabled {
+        border-color: rgba(#3f3f3f, 0.6);
+        color: rgba(#3f3f3f, 0.4);
+      }
+    }
+    &.primary {
+      background-color: transparent;
+      border: 1px solid #2962ff;
+      color: #2962ff;
+      &:hover:not(:disabled) {
+        background-color: rgba(#2962ff, 0.1);
+      }
+      &:disabled {
+        border-color: rgba(#2962ff, 0.6);
+        color: rgba(#2962ff, 0.4);
+      }
+    }
+    &.secondary {
+      background-color: transparent;
+      border: 1px solid #455a64;
+      color: #455a64;
+      &:hover:not(:disabled) {
+        background-color: rgba(#455a64, 0.1);
+      }
+      &:disabled {
+        border-color: rgba(#455a64, 0.6);
+        color: rgba(#455a64, 0.4);
+      }
+    }
+    &.danger {
+      background-color: transparent;
+      border: 1px solid #d32f2f;
+      color: #d32f2f;
+      &:hover:not(:disabled) {
+        background-color: rgba(#d32f2f, 0.1);
+      }
+      &:disabled {
+        border-color: rgba(#d32f2f, 0.6);
+        color: rgba(#d32f2f, 0.4);
+      }
+    }
+  }
+  &.btn-variants-text {
+    &.default {
+      background-color: transparent;
+      color: #3f3f3f;
+      &:hover:not(:disabled) {
+        background-color: rgba(#3f3f3f, 0.1);
+      }
+      &:disabled {
+        color: rgba(#3f3f3f, 0.4);
+      }
+    }
+    &.primary {
+      background-color: transparent;
+      color: #2962ff;
+      &:hover:not(:disabled) {
+        background-color: rgba(#2962ff, 0.1);
+      }
+      &:disabled {
+        color: rgba(#2962ff, 0.4);
+      }
+    }
+    &.secondary {
+      background-color: transparent;
+      color: #455a64;
+      &:hover:not(:disabled) {
+        background-color: rgba(#455a64, 0.1);
+      }
+      &:disabled {
+        color: rgba(#455a64, 0.4);
+      }
+    }
+    &.danger {
+      background-color: transparent;
+      color: #d32f2f;
+      &:hover:not(:disabled) {
+        background-color: rgba(#d32f2f, 0.1);
+      }
+      &:disabled {
+        color: rgba(#d32f2f, 0.4);
+      }
+    }
+  }
+}
